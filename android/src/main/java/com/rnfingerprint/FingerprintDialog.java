@@ -23,7 +23,6 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
     private boolean isAuthInProgress;
 
     private ImageView mFingerprintImage;
-    private TextView mFingerprintSensorDescription;
     private TextView mFingerprintError;
 
     private String authReason;
@@ -61,11 +60,7 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
             this.mFingerprintImage.setColorFilter(this.imageColor);
         }
 
-        this.mFingerprintSensorDescription = (TextView) v.findViewById(R.id.fingerprint_sensor_description);
-        this.mFingerprintSensorDescription.setText(this.sensorDescription);
-
         this.mFingerprintError = (TextView) v.findViewById(R.id.fingerprint_error);
-        this.mFingerprintError.setText(this.errorText);
 
         final Button mCancelButton = (Button) v.findViewById(R.id.cancel_button);
         mCancelButton.setText(this.cancelText);
@@ -174,7 +169,6 @@ public class FingerprintDialog extends DialogFragment implements FingerprintHand
     public void onError(String errorString, int errorCode) {
         this.mFingerprintError.setText(errorString);
         this.mFingerprintImage.setColorFilter(this.imageErrorColor);
-        this.mFingerprintSensorDescription.setText(this.sensorErrorDescription);
     }
 
     @Override
