@@ -64,6 +64,7 @@
         android:paddingLeft="15dp"
         android:paddingRight="15dp"
         android:text="取消"
-        android:textColor="#696969" />
+        android:textColor="#696969"
+        android:textSize="17dp" />
 
 </LinearLayout>
