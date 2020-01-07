@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:paddingTop="10dp"
-        android:paddingBottom="12dp"
+        android:paddingBottom="15dp"
         android:textColor="#444"
         android:textSize="15dp" />
 
@@ -46,8 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="#fff"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
         android:text="取消"
         android:textColor="#F9770D"
         android:textSize="16dp" />
